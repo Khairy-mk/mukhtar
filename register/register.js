@@ -43,6 +43,7 @@ var firebaseConfig = {
       phone =document.getElementById("mobilenumber").value;
       adress = document.getElementById("adress").value;
       password = document.getElementById("password").value;
+      cpassword = document.getElementById("cpassword").value;
     
      if (!uname.match(/^[a-zA-Z]+$/)){
          alert ("Enter Your  username")
@@ -64,21 +65,28 @@ var firebaseConfig = {
      else if (!adress.match(/^[a-zA-Z]+$/)){
          alert ("Incorrect Subject")
      }
-     else if (!password.match(/^[a-zA-Z0-9]+$/)||password.length<8){
+     else if (!password.match(/^[a-zA-Z0-9]+$/)||password.length<6){
+        alert("Incorrect Password")
+    }
+     else if (!cpassword.match(/^[a-zA-Z0-9]+$/)||password.length<6){
          alert("Incorrect Password")
      }
 
      else {
 
         firebase.auth().createUserWithEmailAndPassword(email, password).then(function(){
-            sendData();  
-        }).catch(function(error) {
+            sendData();
+         })
+        .catch(function(error) {
+           
+
             // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
-            console.log("error:" + error);
+            console.log("error:" +error)
             // ...
-          });
+         
+        });
 
          //alert ("Submitted");
          //Container.style.display="none";
@@ -86,8 +94,8 @@ var firebaseConfig = {
          //window.location="sign in.html";
          
       
-        }
-    })
+        
+      } })
     
 
   const sendData=()=>{
@@ -105,7 +113,9 @@ const SendToDataBase=()=>{
         email:email,
         phone: phone ,
         adress:adress ,
-        password: password 
+        password: password, 
+        cpassword:cpassword
+    
         
     }).then( function(){
         SendingLayout.style.display="none";
@@ -116,6 +126,6 @@ const SendToDataBase=()=>{
     })
     const loginPage=document.getElementById("login");
     loginPage.addEventListener('click',()=>{
-        window.location="../login/log_in.html";   
+        window.location="../SIGNIN/log_in.html";   
     })
 }

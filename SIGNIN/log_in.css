@@ -8,18 +8,19 @@ form{
     height: 70px;
 }
 .btnn{
-    background-color:black;   
+    background-color:white;   
     text-decoration:white ;
-    color: white;
+    color: black;
     font-size:20px; 
     text-align:70%;
 }
-.log{
-    background-color:black;
+.login{
+    background-color:bisque;
     text-align: center;
-    margin-top: 100px; 
+    margin-top: 200px; 
     width:20%;
     height: 70%; 
+    margin-left: 450px;
 }
 .signIn{
     text-align: center;
@@ -38,8 +39,9 @@ form input{
     color: black;
     width: 400px;
     height: 30px;
-    background-color:bisque;
+    background-color:white;
     padding: 6px;
 }
-
-
+h1{
+    text-align: center;
+}
