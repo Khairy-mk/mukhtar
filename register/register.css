@@ -1,0 +1,95 @@
+h1{
+    text-align: center;
+    font-size: 70px;
+    color:black;
+}
+.ummul-khair Label{ float:right;
+width: 200px;
+font: 70%;
+text-align:left;
+background-color:gray;
+}
+.ummul-khair{
+    background-color:bisque;
+    text-align: center;
+    margin-left: 400px;
+    float: left;
+    width: 600px;;
+    border: 3px solid;
+    padding: 10px;
+}
+.bttn{
+   
+    background-color:rgb(80,0,0);   
+    text-decoration: rgb(44, 42, 42);
+    color: white;
+    font-size:20px; 
+    text-align:70%;
+}
+form input{
+    text-align: center;
+    color: black;
+    width: 400px;
+    height: 30px;
+    background-color:bisque;
+    
+}
+fieldset{
+    color: black;
+    background-color:#ff8080;
+    text-align:right;
+    margin-top: 40px; 
+    border-radius: 35px;
+    padding: 50px;
+    width: 550px;
+    height: 670px;
+    margin-right: 150px;
+}
+body{
+
+    background-color:rgb(80,0,0);		
+    color: 
+   
+}
+.khair{
+    background-color: dodgerblue;
+    text-align: center;
+    width: 20%;
+}
+.account{
+    color: black;
+    font-size: 35px;
+    margin-bottom: 50px;
+    border: 10px solid transparent;
+    padding: 15px;
+    border: 10px solid transparent;
+    padding: 15px;
+}
+account.solid {outline-style: solid;}
+
+img{
+    margin-left: 560px;;
+}
+.create{
+    width: 500px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+.bttn2{
+    background-color:red;
+    color: white;
+    
+}
+login{
+    color: white;
+}
+.sdl{
+    color: bisque;
+}
+.sul{
+    color: bisque;
+}
+.btn3{
+    color: black;
+    background-color: bisque;
+}

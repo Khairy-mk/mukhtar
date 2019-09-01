@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="register.css">
 </head>
 <body>
-    <div>
+        
+       
+    <div class="register" id="container">
         <form>
-            <Fieldset class="ummul-khair"><br><br>
-                    <p>CREATE AN ACCOUNT</p>
+            <div>
+            <Fieldset class="ummul-khair">
+                       <p class="account">CREATE AN ACCOUNT</p>
+                                    
                         <input type="text" id="username" name="username" placeholder="username"><br><br>
                         <input type="text" id="dbirth" name="Date of Birth" placeholder="Date of Birth"><br><br>
                         <input type="text" id="pbirth" name="Place of Birth" placeholder="Place of Birth"><br><br>
@@ -20,20 +24,37 @@
                         <input type="text" id="adress" name="Contact Adress" placeholder="Contact Adress"><br><br>
                         <input type="text" id="password" name="Create a password" placeholder="Create a password"><br><br>
                     <div>
-                    <p>
-                        <button class="bttn" type="button" id="save">Submit</button>
+                    <p class="sumbmit" >
+                        <button class="bttn" type="button" id="saveData">Sign me up</button>
                             </p>
                     </div>
+                   
         </Fieldset>
-    </form>
+            </div>
+        </form>>
     </div>
-    <div>
-    <button><a href="../login/log_in.html">log in</a></button>
+
+    <div id="SendingLayout" class="sdl">
+        <h1>Please wait</h1>
+        <img src="../image/moses.gif" alt="gif">
+
+    </div>
+    <div id="SuccessLayout" class="sul">
+        <h1>Registration successful</h1>
+        <img src="" alt="">
+        <button id="login" class="btn3">login 
+            <a href="../login/log_in.html"></a>
+        </button>
+
+    </div>
+    <div id="FailedLayout">
+        <h1>Registration failed,please try again</h1>
     </div>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-firestore.js"></script>
-    <script src="register.js"></script>
+    <script src="register.js"></script> 
     <!-- TODO: Add SDKs for Firebase products that you want to use
  https://firebase.google.com/docs/web/setup#config-web-app -->
 </body>

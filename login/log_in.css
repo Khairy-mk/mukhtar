@@ -1,0 +1,45 @@
+body{
+    background-color:bisque; 
+}
+form{
+    text-align: center;
+    margin-top: 100px;
+    width: 200px;
+    height: 70px;
+}
+.btnn{
+    background-color:black;   
+    text-decoration:white ;
+    color: white;
+    font-size:20px; 
+    text-align:70%;
+}
+.log{
+    background-color:black;
+    text-align: center;
+    margin-top: 100px; 
+    width:20%;
+    height: 70%; 
+}
+.signIn{
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 400px;
+    width: 200px;
+    height: 300px;
+    margin-bottom: 70px;
+    background-color: bisque;
+    border: 3px solid;
+    border-radius: 35px;
+    padding: 50px;
+}
+form input{
+    text-align: center;
+    color: black;
+    width: 400px;
+    height: 30px;
+    background-color:bisque;
+    padding: 6px;
+}
+
+
